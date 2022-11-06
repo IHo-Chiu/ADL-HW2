@@ -3,7 +3,7 @@
 ## Environment
 ``` shell
 # If you have conda, we recommend you to build a conda environment called "adl-hw2"
-make
+conda create -n "adl-hw2" python=3.9.13
 conda activate adl-hw2
 pip install -r requirements.txt
 # Otherwise
