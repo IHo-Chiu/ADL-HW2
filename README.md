@@ -17,9 +17,9 @@ bash ./download.sh
 bash ./run.sh ${1} ${2} ${3}
 # bash ./run.sh ntu-adl-hw2-fall-2022/context.json ntu-adl-hw2-fall-2022/test.json results.csv
 ```
-${1}: context file path
-${2}: test file path
-${3}: predict result path
+###### ${1}: context file path
+###### ${2}: test file path
+###### ${3}: predict result path
 
 ## Reproduce other models results
 
@@ -29,12 +29,13 @@ bash ./download_bert.sh
 bash ./download_bert_no_pretrained.sh
 bash ./run.sh ${1} ${2} ${3} ${4}
 # bash ./run.sh ntu-adl-hw2-fall-2022/context.json ntu-adl-hw2-fall-2022/test.json results.csv bert
+# bash ./run.sh ntu-adl-hw2-fall-2022/context.json ntu-adl-hw2-fall-2022/test.json results.csv bert_no_pretrained
 ```
 
-${1}: context file path
-${2}: test file path
-${3}: predict result path
-${4}: option model: (bert, bert_no_pretrained, roberta)
+###### ${1}: context file path
+###### ${2}: test file path
+###### ${3}: predict result path
+###### ${4}: option model: (bert, bert_no_pretrained, roberta)
 
 ### Intent Classification
 ``` shell
@@ -43,12 +44,12 @@ bash ./run_intent.sh ${1} ${2}
 # bash ./run_intent.sh intent-classification-ntu-adl-hw1-fall-2022/test.json results.csv
 ```
 
-${1}: test file path
-${2}: predict result path
+###### ${1}: test file path
+###### ${2}: predict result path
 
 ### Slot Tagging
 
-need to install seqeval
+###### need to install seqeval
 
 ``` shell
 bash ./download_slot.sh
@@ -56,19 +57,19 @@ bash ./run_slot.sh ${1} ${2}
 # bash ./run_slot.sh slot-tagging-ntu-adl-hw1-fall-2022/test.json results.csv
 ```
 
-${1}: test file path
-${2}: predict result path
+###### ${1}: test file path
+###### ${2}: predict result path
 
 ## Train models
 
 ### Datasets
-https://www.kaggle.com/competitions/ntu-adl-hw2-fall-2022
+###### https://www.kaggle.com/competitions/ntu-adl-hw2-fall-2022
 
 ### Pretrained Models
-https://huggingface.co/models?search=chinese
+###### https://huggingface.co/models?search=chinese
 
 ### Training Arguments Document
-https://huggingface.co/docs/transformers/v4.24.0/en/main_classes/trainer#transformers.TrainingArguments
+###### https://huggingface.co/docs/transformers/v4.24.0/en/main_classes/trainer#transformers.TrainingArguments
 
 ### Content Selection
 
